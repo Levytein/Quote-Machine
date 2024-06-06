@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  @apply bg-gray-100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#quote-box {
+  
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}

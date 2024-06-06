@@ -1,0 +1,43 @@
+export const FETCH_QUOTE_REQUEST = "FETCH_QUOTE_REQUEST";
+export const FETCH_QUOTE_SUCCESS = "FETCH_QUOTE_SUCCESS";
+export const FETCH_QUOTE_FAILURE = "FETCH_QUOTE_FAILURE";
+
+
+export const fetchQuoteRequest = () => (
+    {
+        type: FETCH_QUOTE_REQUEST,
+    }
+)
+export const fetchQuoteSuccess = (quote) => (
+    {
+        type: FETCH_QUOTE_SUCCESS,
+        payload:quote,
+    }
+)
+export const fetchQuoteFailure = (quote) => (
+    {
+        type: FETCH_QUOTE_REQUEST,
+        payload:{},
+        error:quote,
+    }
+)
+
+export const fetchQuote= ()=>
+    {
+        return async (dispatch) =>{
+        dispatch(fetchQuoteRequest());
+        try{
+            const response = await fetch("https://type.fit/api/quotes");
+            const data = await response.json();
+            const randomQuote = data[Math.floor(Math.random() * data.length)];
+            dispatch(fetchQuoteSuccess(randomQuote));
+            }
+        catch(error){
+                dispatch(fetchQuoteFailure(error.message));
+            }
+
+            
+        }
+        
+        
+    }
