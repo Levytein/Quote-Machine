@@ -9,8 +9,11 @@ Project consists of a scripts made in Javascript using React and Redux. For the 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>JavaScript</b> 
+- <b>CSS</b>
+- <b>React</b>
+- <b>Redux</b>
+- <b>Tailwind</b>
 
 <h2>Environments Used </h2>
 
