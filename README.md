@@ -6,7 +6,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Project consists of a scripts made in Javascript using React and Redux. For the CSS aspect, I used Tailwind and grabbing api data from <i>https://type.fit/api/quotes</i>
 <br />
 
-
+<h2>Check it out here</h2>
+<b>https://quote-machine-mauve.vercel.app/</b>
 <h2>Languages and Utilities Used</h2>
 
 - <b>JavaScript</b> 
