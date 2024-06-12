@@ -15,7 +15,23 @@ Project consists of a scripts made in Javascript using React and Redux. For the 
 - <b>React</b>
 - <b>Redux</b>
 - <b>Tailwind</b>
+<h2>Installation </h2>
 
+### Clone the repository:
+
+```
+git clone https://github.com/Levytein/Quote-Machine.git
+cd Quote-Machine
+```
+
+### Install dependencies (Node.js and npm should be installed):
+```
+npm install
+```
+### Start the development server:
+```
+npm run dev
+```
 <h2>Environments Used </h2>
 
 - <b>Windows 10</b> (21H2)
